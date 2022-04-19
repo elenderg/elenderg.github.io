@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+  }
+li{
+    list-style-type: none !important;
+}
+ul{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.minhanavbar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.minhanavbar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+
+
+.minhanavbar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .minhanavbar { 
+        width: 100%; 
+        height: auto;         
+        position: fixed;
+    }
+
+    .minhanavbar a {        
+        float: left;
+    }
+
+    div.content {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .minhanavbar{
+        position: relative;
+    }
+    .minhanavbar a {
+        text-align: center;
+        float: none;        
+    }
+    div.content{
+        margin: 5px;
+    }
+}
+
